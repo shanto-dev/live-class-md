@@ -1128,6 +1128,7 @@ $size: 62px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-right: 0;
 
         .hb_objective_content {
             width: calc(100% - 60px);
@@ -1163,11 +1164,15 @@ $size: 62px;
     .hb_lesson_time > div{
         justify-content: center;
     }
+    .hb_close{
+        margin-right: 12px;
+    }
+
 }
 @media(max-width: 399px){
     
     .hb_lesson_time {
-        min-width: 66vw;
+        min-width: 65vw;
     }
 }
 

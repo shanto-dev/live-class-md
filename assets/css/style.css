@@ -931,6 +931,7 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 0;
   }
   .hub_component .hb_objective_content {
     width: calc(100% - 60px);
@@ -961,10 +962,13 @@ h1, h2, h3 {
   .hb_lesson_time > div {
     justify-content: center;
   }
+  .hb_close {
+    margin-right: 12px;
+  }
 }
 @media (max-width: 399px) {
   .hb_lesson_time {
-    min-width: 66vw;
+    min-width: 65vw;
   }
 }
 @-webkit-keyframes shimmer {
