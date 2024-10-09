@@ -1164,6 +1164,12 @@ $size: 62px;
         justify-content: center;
     }
 }
+@media(max-width: 399px){
+    
+    .hb_lesson_time {
+        min-width: 66vw;
+    }
+}
 
 
 @-webkit-keyframes shimmer {
