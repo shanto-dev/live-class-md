@@ -145,7 +145,7 @@ h1, h2, h3 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0));
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0));
@@ -198,7 +198,7 @@ h1, h2, h3 {
 }
 .hub_component .hb_objective_content {
   background: #353540;
-  padding: 9px 16px 17px;
+  padding: 8px 16px 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,7 +212,7 @@ h1, h2, h3 {
   justify-content: space-between;
 }
 .hub_component .hb_objective_content h3 {
-  font-size: 1.4vw;
+  font-size: 1.45vw;
   color: var(--color-white);
   font-family: var(--primary-font);
   font-weight: 600;
@@ -245,7 +245,9 @@ h1, h2, h3 {
   font-size: 14px;
   color: #D9D9D9;
   font-family: var(--primary-font);
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  text-align: center;
 }
 .hb_object_checkbox label span {
   width: 44px;
@@ -262,10 +264,11 @@ h1, h2, h3 {
   -ms-flex-pack: center;
   justify-content: center;
   color: var(--color-white);
-  border-radius: 2px;
+  border-radius: 4px;
   margin-left: -4px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  margin-bottom: 4px;
 }
 .hb_object_checkbox label span svg path {
   stroke: transparent;
@@ -318,7 +321,8 @@ h1, h2, h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 7px 10px;
+  padding: 6px 10px 7px;
+  margin-right: 4px;
 }
 .hb_object_time .clock_icon img {
   width: 66px;
@@ -346,7 +350,7 @@ h1, h2, h3 {
 }
 
 .hb_lesson_time {
-  padding: 17px 2vw 13px;
+  padding: 16px 2vw 13px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -ms-flex-item-align: end;
@@ -478,7 +482,6 @@ h1, h2, h3 {
   margin: 0.5em;
   width: 62px;
   height: 62px;
-  padding: attr(data-progress);
 }
 #stopwatch .switch {
   position: absolute;
@@ -490,18 +493,18 @@ h1, h2, h3 {
   animation: pressure var(--lapTime) ease-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  box-shadow: 0 0 1.24px 0 var(--heading-color);
+  box-shadow: 0 0 1.24px 0 var(--color-black);
 }
 #stopwatch .ring {
   position: absolute;
-  top: 7.44px;
-  left: 6.2px;
-  border: 3.72px solid var(--heading-color);
-  width: 49.6px;
-  height: 49.6px;
+  top: 7.52px;
+  left: 6.3px;
+  border: 4.5px solid var(--color-black);
+  width: 48.98px;
+  height: 48.98px;
   border-radius: 50%;
   z-index: 500;
-  box-shadow: inset 0 0 1.86px 0 var(--heading-color);
+  box-shadow: inset 0 0 1.86px 0 var(--color-black);
 }
 #stopwatch .pie {
   position: absolute;
@@ -510,8 +513,8 @@ h1, h2, h3 {
   width: 55.8px;
   height: 55.8px;
   border-radius: 50%;
-  border: 6.2px solid slategrey;
-  box-shadow: 0 0 1.86px 0 var(--heading-color);
+  border: 7px solid slategrey;
+  box-shadow: 0 0 1.86px 0 var(--color-black);
 }
 #stopwatch .pie:before {
   content: "";
@@ -530,26 +533,7 @@ h1, h2, h3 {
   background-image: linear-gradient(to left, transprent 50%, #3822F1 0);
 }
 #stopwatch .pie1:before {
-  background-color: rgb(219, 238, 252);
-  -webkit-transform: rotate(1turn);
-  transform: rotate(1turn);
-  -webkit-animation: spin1 calc(var(--lapTime) / 2) linear;
-  animation: spin1 calc(var(--lapTime) / 2) linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-#stopwatch .pie1:after {
-  content: "";
-  left: -0.2px;
-  top: calc(-100% - 0.31px);
-  display: block;
-  margin-left: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0/50%;
-  -webkit-transform-origin: left;
-  transform-origin: left;
-  position: relative;
-  background-color: rgb(219, 238, 252);
+  background-color: var(--color-black);
   -webkit-transform: rotate(1turn);
   transform: rotate(1turn);
   -webkit-animation: spin1 calc(var(--lapTime) / 2) linear;
@@ -561,8 +545,8 @@ h1, h2, h3 {
   z-index: 0;
   -webkit-transform: rotate(1turn);
   transform: rotate(1turn);
-  background-image: -webkit-linear-gradient(right, transparent 50%, rgb(219, 238, 252) 0);
-  background-image: linear-gradient(to left, transparent 50%, rgb(219, 238, 252) 0);
+  background-image: -webkit-linear-gradient(right, transparent 50%, var(--color-black) 0);
+  background-image: linear-gradient(to left, transparent 50%, var(--color-black) 0);
   -webkit-animation: altitude var(--lapTime) step-end, temperature var(--lapTime) linear;
   animation: altitude var(--lapTime) step-end, temperature var(--lapTime) linear;
   -webkit-animation-iteration-count: infinite;
@@ -674,7 +658,8 @@ h1, h2, h3 {
     font-size: 30px;
   }
   .hub_component .hb_objective_content {
-    padding: 6px 15px 8px;
+    padding: 10px 12px 4px;
+    align-items: center;
   }
   .hub_component .hb_objective_content h3 {
     font-size: 1.4vw;
@@ -722,8 +707,8 @@ h1, h2, h3 {
     margin-top: 5px;
   }
   .hb_object_time .clock_icon {
-    width: 65px;
-    padding: 14px 10px 14px 9px;
+    width: 62px;
+    padding: 14px 8px 11px 8px;
   }
   .hb_object_time .clock_icon img {
     width: 36px;
@@ -736,52 +721,57 @@ h1, h2, h3 {
     margin-top: 0;
   }
   .hb_lesson_time {
-    padding: 12px 2vw 8px;
+    padding: 14px 2vw 9px;
   }
   .hb_object_checkbox {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
   .hb_object_timer p {
     font-size: 14px;
   }
   #stopwatch {
-    width: 38px;
-    height: 38px;
     margin: 0;
+    width: 44px;
+    height: 44px;
   }
   #stopwatch .switch {
     position: absolute;
-    left: 14.44px;
-    width: 9.12px;
-    height: 3.8px;
-    box-shadow: 0 0 0.76px 0 var(--heading-color);
+    left: 16.72px;
+    width: 10.56px;
+    height: 4.4px;
+    background-color: slategrey;
+    -webkit-animation: pressure var(--lapTime) ease-out;
+    animation: pressure var(--lapTime) ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 0.88px 0 var(--color-black);
   }
   #stopwatch .ring {
     position: absolute;
-    top: 5.13px;
-    left: 4.18px;
-    border: 2.28px solid var(--heading-color);
-    width: 29.64px;
-    height: 29.64px;
-    box-shadow: inset 0 0 1.14px 0 var(--heading-color);
+    top: 5.53px;
+    left: 4.6px;
+    border: 3px solid var(--color-black);
+    width: 34.76px;
+    height: 34.76px;
+    box-shadow: inset 0 0 1.32px 0 var(--color-black);
   }
   #stopwatch .pie {
     position: absolute;
-    left: 1.9px;
-    top: 2.66px;
-    width: 34.2px;
-    height: 34.2px;
+    left: 2.2px;
+    top: 3.08px;
+    width: 39.6px;
+    height: 39.6px;
     border-radius: 50%;
-    border: 3.8px solid slategrey;
-    box-shadow: 0 0 1.14px 0 var(--heading-color);
+    border: 5.5px solid slategrey;
+    box-shadow: 0 0 1.32px 0 var(--color-black);
   }
   @-webkit-keyframes pressure {
     0% {
       top: 0px;
     }
     2% {
-      top: 1.9px;
+      top: 2.2px;
     }
     4% {
       top: 0px;
@@ -792,7 +782,7 @@ h1, h2, h3 {
       top: 0px;
     }
     2% {
-      top: 1.9px;
+      top: 2.2px;
     }
     4% {
       top: 0px;
@@ -822,96 +812,95 @@ h1, h2, h3 {
 }
 @media (max-width: 1366px) {
   .hub_component .hbfonts-light-bulb {
-    width: 70px;
-    padding: 12px;
-    height: 62px;
-    font-size: 30px;
+    width: 64px;
   }
-  .hub_component .hb_objective_content {
-    padding: 6px 15px 8px;
+  .hb_lesson_time .hub_countdown li {
+    font-size: 1.5vw;
   }
-  .hub_component .hb_objective_content h3 {
-    font-size: 1.6vw;
+  .hub_countdown li {
+    font-size: 1.9vw;
   }
-  .hub_component .hb_objective_content p {
-    font-size: 1.1vw;
-    width: 38vw;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .hb_object_checkbox {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
+  #stopwatch .pie {
+    border: 5px solid slategrey;
   }
   .hb_close {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hb_close i {
+    font-size: 10px;
   }
 }
 @media (max-width: 1199px) {
-  .hub_component .hbfonts-light-bulb {
-    width: 65px;
-    padding: 12px;
-    height: 62px;
-    font-size: 30px;
-  }
-  .hub_component .hb_objective_content {
-    padding: 5px 10px 9px;
-  }
   .hub_component .hb_objective_content h3 {
-    font-size: 2.1vw;
+    font-size: 2.3vw;
   }
   .hub_component .hb_objective_content p {
-    font-size: 1.2vw;
-    width: 38vw;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 14px;
   }
-  .hub_component .hb_lesson_time .hub_countdown li {
-    font-size: 1.6vw;
+  .hub_component .hb_object_time {
+    min-width: 195px;
   }
-  .hub_component .hub_countdown li {
-    font-size: 2.4vw;
+}
+@media (max-width: 991px) {
+  .hb_object_timer {
+    display: none;
   }
-  .hub_component #stopwatch {
-    width: 38px;
-    height: 38px;
+  .hub_component .hb_object_time {
+    min-width: unset;
+    padding: 0;
+  }
+  .hub_component .hb_objective_content h3 {
+    font-size: 2.6vw;
+  }
+  .hub_component .hb_objective_content p {
+    width: 44vw;
+  }
+  #stopwatch {
     margin: 0;
+    width: 40px;
+    height: 40px;
   }
-  .hub_component #stopwatch .switch {
+  #stopwatch .switch {
     position: absolute;
-    left: 14.44px;
-    width: 9.12px;
-    height: 3.8px;
-    box-shadow: 0 0 0.76px 0 var(--heading-color);
+    left: 15.2px;
+    width: 9.6px;
+    height: 4px;
+    background-color: slategrey;
+    -webkit-animation: pressure var(--lapTime) ease-out;
+    animation: pressure var(--lapTime) ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 0.8px 0 var(--color-black);
   }
-  .hub_component #stopwatch .ring {
+  #stopwatch .ring {
     position: absolute;
-    top: 5.32px;
-    left: 4.18px;
-    border: 2.66px solid var(--heading-color);
-    width: 29.26px;
-    height: 29.26px;
-    box-shadow: inset 0 0 1.14px 0 var(--heading-color);
+    top: 5.53px;
+    left: 4.6px;
+    border: 3px solid var(--color-black);
+    width: 30.8px;
+    height: 30.8px;
+    box-shadow: inset 0 0 1.2px 0 var(--color-black);
   }
-  .hub_component #stopwatch .pie {
+  #stopwatch .pie {
     position: absolute;
-    left: 1.9px;
-    top: 2.66px;
-    width: 34.2px;
-    height: 34.2px;
+    left: 2px;
+    top: 2.8px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    border: 5.7px solid slategrey;
-    box-shadow: 0 0 1.14px 0 var(--heading-color);
+    border: 5.5px solid slategrey;
+    box-shadow: 0 0 1.2px 0 var(--color-black);
   }
   @-webkit-keyframes pressure {
     0% {
       top: 0px;
     }
     2% {
-      top: 1.9px;
+      top: 2px;
     }
     4% {
       top: 0px;
@@ -922,133 +911,55 @@ h1, h2, h3 {
       top: 0px;
     }
     2% {
-      top: 1.9px;
+      top: 2px;
     }
     4% {
       top: 0px;
     }
   }
-  .hb_object_checkbox {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-  .hb_close {
-    width: 2.5vw;
-    height: 2.5vw;
-  }
   .hb_object_time .clock_icon {
-    width: 57px;
-    padding: 14px 10px 14px 7px;
+    width: 58px;
+    padding: 16px 8px 14px 8px;
+    margin: 0;
   }
-}
-@media (max-width: 991px) {
-  .hub_component .hb_object_timer {
-    display: none;
-  }
-  .hub_component .hb_object_time {
-    min-width: 57px;
-    padding: 0;
-  }
-  .hub_component .hb_lesson_time > p {
-    font-size: 15px;
-  }
-  .hub_component .hb_lesson_time .clock_icon svg {
-    width: 20px;
-  }
-  .hub_component .hb_lesson_time .hub_countdown li {
-    font-size: 18px;
-  }
-  .hub_component .hb_object_checkbox label span {
-    width: 34px;
-    height: 34px;
-  }
-  .hub_component .hb_objective_content h3 {
-    font-size: 2.4vw;
-  }
-  .hub_component .hb_object_time .clock_icon {
-    padding: 14px 10px 14px 7px;
-  }
-  .hub_component .hb_objective_content p {
-    font-size: 1.7vw;
-    width: 42vw;
-  }
-  .hub_component .hb_objective_content {
-    padding: 4px 10px 8px;
-  }
-  .hub_component .hb_lesson_time {
-    padding: 12px 2vw 6px;
-  }
-  .hub_component .hb_close {
-    width: 28px;
-    height: 28px;
-  }
-  .hub_component .hb_close i {
-    font-size: 11px;
-  }
-  .hub_component .hb_close :focus i {
-    font-size: 12px;
+  .hb_lesson_time .hub_countdown li {
+    font-size: 20px;
   }
 }
 @media (max-width: 767px) {
   .hub_component {
-    -ms-flex-wrap: wrap;
+    display: flex;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .hub_component .hb_objective_content {
-    width: calc(100% - 65px);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    padding: 8px 10px 6px;
+    width: calc(100% - 60px);
+    padding: 5px 10px 5px;
   }
   .hub_component .hb_objective_content h3 {
-    font-size: 3.5vw;
+    font-size: 5vw;
   }
   .hub_component .hb_objective_content p {
-    font-size: 2.7vw;
-    width: 63vw;
+    display: none;
   }
-  .hub_component .hb_object_timer {
-    display: block;
-    min-width: 33vw;
+  .hub_component .hbfonts-light-bulb {
+    width: 60px;
   }
-  .hub_component .hb_object_checkbox {
+  .hb_object_time .clock_icon {
+    width: 60px;
+    padding: 13px 10px 13px 8px;
+  }
+  .hb_object_checkbox {
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
   }
-  .hub_component .hb_lesson_time {
-    padding: 13px 7vw 7px;
+  .hb_lesson_time {
+    padding: 12px 3vw 8px;
+    min-width: 70vw;
+    text-align: center;
   }
-}
-@media (max-width: 489px) {
-  .hub_component {
-    padding: 0;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .hub_component .hb_lesson_time {
-    padding: 13px 3vw 7px;
-  }
-  .hub_component .hb_objective_content p {
-    width: 60vw;
-  }
-  .hub_component .hb_close {
-    margin-right: 12px;
-  }
-}
-@media (max-width: 399px) {
-  .hub_component .hb_object_timer {
-    display: none;
-  }
-  .hub_component .hb_lesson_time {
-    padding: 13px 11vw 7px;
-  }
-  .hub_component .hb_objective_content p {
-    width: 55vw;
+  .hb_lesson_time > div {
+    justify-content: center;
   }
 }
 @-webkit-keyframes shimmer {
